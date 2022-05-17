@@ -1,5 +1,5 @@
 {
-    "name": "@jabberwocky-db/ts-node-template",
+    "name": "@jabberwocky-db/global",
     "version": "1.0.0",
     "license": "MIT",
     "sideEffects": false,
@@ -33,7 +33,7 @@
         "@jabberwocky-db/jest-config": "1.0.1",
         "@jabberwocky-db/prettier-config": "2.0.1",
         "@jabberwocky-db/rollup-config": "1.0.1",
-        "@jabberwocky-db/tsconfig-node": "1.0.3",
+        "@jabberwocky-db/tsconfig": "1.0.6",
         "jest": "28.1.0",
         "rollup": "2.73.0",
         "typescript": "4.6.4"

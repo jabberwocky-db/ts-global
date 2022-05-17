@@ -1,5 +1,5 @@
 {
-    "extends": "@jabberwocky-db/tsconfig-node/index.json",
+    "extends": "@jabberwocky-db/tsconfig/index.json",
     "compilerOptions": {
         "baseUrl": "."
     },
