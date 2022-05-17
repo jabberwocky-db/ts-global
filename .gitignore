@@ -9,6 +9,6 @@ yarn.lock
 !.yarn/versions
 .pnp.*
 
-*.cjs
-*.js
-*.d.ts
+index.cjs
+index.js
+index.d.ts
