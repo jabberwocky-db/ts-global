@@ -1,0 +1,41 @@
+{
+    "name": "@jabberwocky-db/ts-node-template",
+    "version": "1.0.0",
+    "license": "MIT",
+    "sideEffects": false,
+    "type": "module",
+    "prettier": "@jabberwocky-db/prettier-config",
+    "eslintConfig": {
+        "extends": "@jabberwocky-db"
+    },
+    "files": [
+        "/index.js",
+        "/index.cjs",
+        "/index.d.ts"
+    ],
+    "module": "./index.js",
+    "main": "./index.cjs",
+    "types": "./index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./index.js",
+            "require": "./index.cjs",
+            "types": "./index.d.ts"
+        }
+    },
+    "scripts": {
+        "build": "yarn rollup --config node:@jabberwocky-db/rollup-config",
+        "test": "NODE_NO_WARNINGS=1 NODE_OPTIONS=--experimental-vm-modules jest --maxWorkers=50%",
+        "lint": "yarn tsc --noEmit --emitDeclarationOnly false & eslint src --fix --cache"
+    },
+    "devDependencies": {
+        "@jabberwocky-db/eslint-config": "1.0.1",
+        "@jabberwocky-db/jest-config": "1.0.1",
+        "@jabberwocky-db/prettier-config": "2.0.1",
+        "@jabberwocky-db/rollup-config": "1.0.1",
+        "@jabberwocky-db/tsconfig-node": "1.0.3",
+        "jest": "28.1.0",
+        "rollup": "2.73.0",
+        "typescript": "4.6.4"
+    }
+}
